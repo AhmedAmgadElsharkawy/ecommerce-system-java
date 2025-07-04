@@ -2,6 +2,7 @@ import java.time.LocalDate;
 
 import models.cart.Cart;
 import models.products.Cheese;
+import models.products.MobileScratchCard;
 import models.products.TV;
 import models.products.interfaces.Product;
 import models.store.Store;
@@ -17,11 +18,13 @@ public class ECommerceSystem {
         Product samsungTV = new TV("Samsung TV", 50, 1500, 5.0, "stv21");
         Product toshibaTV = new TV("Toshiba TV", 1, 1000, 7.0, "ttv21");
         Product fetaCheese = new Cheese("Feta Cheese", 10, 30, 0.6, LocalDate.of(2025, 12, 1), "fc11");
+        Product mobileScrachCards = new MobileScratchCard("Mobile Scratch Card", 200, 5, "msc5");
         
         store.addProduct(cheddarCheese);
         store.addProduct(fetaCheese);
         store.addProduct(samsungTV);
         store.addProduct(toshibaTV);
+        store.addProduct(mobileScrachCards);
 
         Customer customer = new Customer("Ahmed", 1000);
 
@@ -52,6 +55,7 @@ public class ECommerceSystem {
         cart.add(store.findByCode("fc11"), 4);
         cart.add(store.findByCode("stv21"), 2);
         cart.add(store.findByCode("ttv21"), 1);
+        cart.add(store.findByCode("msc5"), 12);
 
         CheckoutService.checkout(customer, cart, new StandardShipping());
     }
