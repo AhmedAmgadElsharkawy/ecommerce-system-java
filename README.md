@@ -1,7 +1,6 @@
 # E-Commerce System (Java)
 
-This repository contains a Java-based implementation of a simplified e-commerce platform.  
-The system supports key features such as product expiration, shipping management, cart operations, and checkout processing — all designed using clean Object-Oriented Programming principles.
+This repository contains a Java-based implementation of a simplified e-commerce system that supports key features such as product expiration, shipping management, cart operations, and checkout processing — all designed using clean Object-Oriented Programming principles.
 
 
 ##  Features
