@@ -1,4 +1,4 @@
-package models;
+package models.products.interfaces;
 
 import java.time.LocalDate;
 

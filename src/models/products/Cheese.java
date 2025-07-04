@@ -1,6 +1,10 @@
-package models;
+package models.products;
 
 import java.time.LocalDate;
+
+import models.products.interfaces.Expirable;
+import models.products.interfaces.Product;
+import models.products.interfaces.Shippable;
 
 public class Cheese extends Product implements Expirable, Shippable {
     private LocalDate expiryDate;

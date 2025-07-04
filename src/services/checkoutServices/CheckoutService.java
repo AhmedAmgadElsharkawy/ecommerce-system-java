@@ -1,13 +1,12 @@
-package services;
+package services.checkoutServices;
 
-import models.Customer;
-import models.Shippable;
+import models.cart.Cart;
+import models.cart.CartItem;
+import models.products.interfaces.Shippable;
+import models.user.Customer;
 import services.ShippingServices.ShippingService;
 
 import java.util.List;
-
-import models.Cart;
-import models.CartItem;
 
 public class CheckoutService {
     public static void checkout(Customer customer, Cart cart, ShippingService shippingService) {

@@ -1,7 +1,11 @@
-package models;
+package models.cart;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import models.products.interfaces.Expirable;
+import models.products.interfaces.Product;
+import models.products.interfaces.Shippable;
 
 public class Cart {
     private List<CartItem> items = new ArrayList<>();

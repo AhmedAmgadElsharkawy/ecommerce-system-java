@@ -1,4 +1,4 @@
-package models;
+package models.products.interfaces;
 
 public interface Shippable {
     double getWeight();

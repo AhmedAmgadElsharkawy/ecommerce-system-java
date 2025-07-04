@@ -1,4 +1,4 @@
-package models;
+package models.products.interfaces;
 
 public abstract class Product {
     private String name;

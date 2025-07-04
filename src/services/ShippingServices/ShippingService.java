@@ -2,8 +2,8 @@ package services.ShippingServices;
 
 import java.util.List;
 
-import models.Shippable;
-import models.CartItem;
+import models.cart.CartItem;
+import models.products.interfaces.Shippable;
 
 public abstract class ShippingService {
     abstract public double calculateShippingFee(Shippable product);

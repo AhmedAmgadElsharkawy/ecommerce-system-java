@@ -1,4 +1,7 @@
-package models;
+package models.products;
+
+import models.products.interfaces.Product;
+import models.products.interfaces.Shippable;
 
 public class TV extends Product implements Shippable{
     private double weight;

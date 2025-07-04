@@ -2,7 +2,7 @@ package services.ShippingServices;
 
 import java.util.List;
 
-import models.Shippable;
+import models.products.interfaces.Shippable;
 
 public class StandardShipping extends ShippingService{
     

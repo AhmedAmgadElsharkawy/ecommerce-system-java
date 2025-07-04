@@ -1,7 +1,9 @@
-package models;
+package models.store;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import models.products.interfaces.Product;
 
 public class Store {
     private List<Product> inventory = new ArrayList<>();
