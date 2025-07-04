@@ -2,7 +2,6 @@
 
 This is a Java-based solution for the **Fawry Rise Full Stack Development Internship Challenge**. The system simulates a basic e-commerce platform with support for expirable products, shippable items, cart management, and a checkout process with shipping fee calculations and validations.
 
----
 
 ## 📦 Features
 
@@ -20,7 +19,6 @@ This is a Java-based solution for the **Fawry Rise Full Stack Development Intern
 - Interface-based design:
   - `Shippable` and `Expirable` interfaces
 
----
 
 ## 🛠️ Technologies Used
 
@@ -28,6 +26,5 @@ This is a Java-based solution for the **Fawry Rise Full Stack Development Intern
 - No external libraries or frameworks
 - Pure OOP principles
 
----
 
 
