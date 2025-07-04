@@ -1,30 +1,52 @@
-# Fawry E-Commerce Challenge (Java)
+# E-Commerce System (Java)
 
-This is a Java-based solution for the **Fawry Rise Full Stack Development Internship Challenge**. The system simulates a basic e-commerce platform with support for expirable products, shippable items, cart management, and a checkout process with shipping fee calculations and validations.
+This repository contains a Java-based implementation of a simplified e-commerce platform.  
+The system supports key features such as product expiration, shipping management, cart operations, and checkout processing — all designed using clean Object-Oriented Programming principles.
 
 
-## 📦 Features
+##  Features
 
-- Define products with:
-  - Name, price, and quantity
-  - Optional expiration (e.g., Cheese, Biscuits)
-  - Optional shipping and weight (e.g., Cheese, TV)
-- Add products to a cart with specific quantities
-- Validate quantities and check expiration status
-- Simulate a checkout:
-  - Calculate subtotal
-  - Calculate shipping fees (based on weight)
+- **Product Management**
+  - Define products with name, price, quantity
+  - Support for:
+    -  Expirable products (e.g., Cheese)
+    -  Shippable products with weight (e.g., TV, Cheese)
+    -  Non-expirable/non-shippable items (e.g., Mobile Scratch Cards)
+
+- **Cart System**
+  - Add items to the cart with a specific quantity
+  - Prevent adding expired or out-of-stock items
+
+- **Checkout Process**
   - Validate customer balance
-  - Print order summary and shipment notice
-- Interface-based design:
-  - `Shippable` and `Expirable` interfaces
+  - Calculate:
+    - Subtotal
+    - Shipping fee (based on total weight at 30 EGP/kg)
+    - Final paid amount
+  - Deduct balance and reduce product stock
+  - Print:
+    - Shipment notice
+    - Checkout receipt
+
+- **Shipping Logic**
+  - Interfaces ensure that only eligible products implement `Shippable`
+  - Automatically collects and processes shippable items for shipping service
 
 
-## 🛠️ Technologies Used
+##  Design & Structure
 
-- Java (JDK 8+)
-- No external libraries or frameworks
-- Pure OOP principles
+- `Product` is an abstract base class for all product types.
+- `Shippable` and `Expirable` are marker interfaces for optional behavior.
+- Concrete products (`Cheese`, `TV`, `MobileScratchCard`) implement relevant interfaces.
+- `Cart` and `CartItem` manage purchase operations.
+- `Customer` holds balance and handles payment.
+- `ShippingService` and `CheckoutService` encapsulate business rules.
+- `ECommerceApp` acts as the **composition root** for wiring and executing the use case.
 
 
+##  Technologies
+
+- Language: **Java 8+**
+- No external libraries
+- Pure Object-Oriented Programming
 
