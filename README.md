@@ -49,3 +49,26 @@ This repository contains a Java-based implementation of a simplified e-commerce 
 - No external libraries
 - Pure Object-Oriented Programming
 
+
+## How to Use
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/AhmedAmgadElsharkawy/ecommerce-system-java.git
+cd ecommerce-system-java
+```
+### 2. run the application
+
+```
+  java src/ECommerceSystem.java
+```
+
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+
