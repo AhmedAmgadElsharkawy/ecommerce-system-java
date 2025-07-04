@@ -3,8 +3,8 @@ package models;
 import java.time.LocalDate;
 
 public class Cheese extends Product implements Expirable, Shippable {
-    LocalDate expiryDate;
-    double weight;
+    private LocalDate expiryDate;
+    private double weight;
 
     public Cheese(String name, int quantity, double price, double weight, LocalDate expiryDate) {
         super(name, quantity, price);
@@ -30,5 +30,10 @@ public class Cheese extends Product implements Expirable, Shippable {
     @Override
     public void setExpiryDate(LocalDate expiryDate) {
         this.expiryDate = expiryDate;
+    }
+
+    @Override
+    public boolean isExpired() {
+        return LocalDate.now().isAfter(expiryDate);
     }
 }
