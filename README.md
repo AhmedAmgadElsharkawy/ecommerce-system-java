@@ -57,8 +57,7 @@ This repository contains a Java-based implementation of a simplified e-commerce 
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/AhmedAmgadElsharkawy/ecommerce-system-java.git
-cd ecommerce-system-java
+  git clone https://github.com/AhmedAmgadElsharkawy/ecommerce-system-java.git
 ```
 ### 2. run the application
 
