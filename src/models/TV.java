@@ -3,8 +3,8 @@ package models;
 public class TV extends Product implements Shippable{
     private double weight;
 
-    public TV(String name, int quantity, double price, double weight) {
-        super(name, quantity, price);
+    public TV(String name, int quantity, double price, double weight, String code) {
+        super(name, quantity, price, code);
         this.weight = weight;
     }
 
